@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <DropboxSDK/DropboxSDK.h>
 
 @interface AppDelegate ()
 
@@ -14,9 +15,15 @@
 
 @implementation AppDelegate
 
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    DBSession *dbSession = [[DBSession alloc]
+                            initWithAppKey:@"ecn8qqsoykhxtm6"
+                            appSecret:@"87av1nvqtfvpprb"
+                            root:kDBRootDropbox]; // either kDBRootAppFolder or kDBRootDropbox
+    
+    [DBSession setSharedSession:dbSession];
+    
     return YES;
 }
 

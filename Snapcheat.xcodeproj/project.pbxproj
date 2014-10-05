@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB12901219E145BB00945985 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8EC4B419E0FD97001AED08 /* ViewController.m */; };
 		BB8EC4AF19E0FD97001AED08 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8EC4AE19E0FD97001AED08 /* main.m */; };
 		BB8EC4B219E0FD97001AED08 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8EC4B119E0FD97001AED08 /* AppDelegate.m */; };
 		BB8EC4B519E0FD97001AED08 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8EC4B419E0FD97001AED08 /* ViewController.m */; };
@@ -14,6 +15,10 @@
 		BB8EC4BA19E0FD97001AED08 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB8EC4B919E0FD97001AED08 /* Images.xcassets */; };
 		BB8EC4BD19E0FD97001AED08 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB8EC4BB19E0FD97001AED08 /* LaunchScreen.xib */; };
 		BB8EC4C919E0FD97001AED08 /* SnapcheatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8EC4C819E0FD97001AED08 /* SnapcheatTests.m */; };
+		BB8EC4D919E12942001AED08 /* DropboxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB8EC4D819E12942001AED08 /* DropboxSDK.framework */; };
+		BB8EC4DB19E12BF3001AED08 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB8EC4DA19E12BF3001AED08 /* Security.framework */; };
+		BB8EC4DD19E12BF9001AED08 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB8EC4DC19E12BF9001AED08 /* QuartzCore.framework */; };
+		BB8EC4DF19E13CF1001AED08 /* snap cheat logo cal hacks.png in Resources */ = {isa = PBXBuildFile; fileRef = BB8EC4DE19E13CF1001AED08 /* snap cheat logo cal hacks.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,10 @@
 		BB8EC4C219E0FD97001AED08 /* SnapcheatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapcheatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB8EC4C719E0FD97001AED08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB8EC4C819E0FD97001AED08 /* SnapcheatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SnapcheatTests.m; sourceTree = "<group>"; };
+		BB8EC4D819E12942001AED08 /* DropboxSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DropboxSDK.framework; path = Snapcheat/DropboxSDK.framework; sourceTree = SOURCE_ROOT; };
+		BB8EC4DA19E12BF3001AED08 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		BB8EC4DC19E12BF9001AED08 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BB8EC4DE19E13CF1001AED08 /* snap cheat logo cal hacks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "snap cheat logo cal hacks.png"; path = "../../snap cheat logo cal hacks.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +56,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB8EC4DD19E12BF9001AED08 /* QuartzCore.framework in Frameworks */,
+				BB8EC4DB19E12BF3001AED08 /* Security.framework in Frameworks */,
+				BB8EC4D919E12942001AED08 /* DropboxSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,13 +93,14 @@
 		BB8EC4AB19E0FD97001AED08 /* Snapcheat */ = {
 			isa = PBXGroup;
 			children = (
+				BB8EC4DC19E12BF9001AED08 /* QuartzCore.framework */,
+				BB8EC4DA19E12BF3001AED08 /* Security.framework */,
+				BB8EC4D819E12942001AED08 /* DropboxSDK.framework */,
 				BB8EC4B019E0FD97001AED08 /* AppDelegate.h */,
 				BB8EC4B119E0FD97001AED08 /* AppDelegate.m */,
 				BB8EC4B319E0FD97001AED08 /* ViewController.h */,
 				BB8EC4B419E0FD97001AED08 /* ViewController.m */,
 				BB8EC4B619E0FD97001AED08 /* Main.storyboard */,
-				BB8EC4B919E0FD97001AED08 /* Images.xcassets */,
-				BB8EC4BB19E0FD97001AED08 /* LaunchScreen.xib */,
 				BB8EC4AC19E0FD97001AED08 /* Supporting Files */,
 			);
 			path = Snapcheat;
@@ -96,6 +109,9 @@
 		BB8EC4AC19E0FD97001AED08 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BB8EC4DE19E13CF1001AED08 /* snap cheat logo cal hacks.png */,
+				BB8EC4BB19E0FD97001AED08 /* LaunchScreen.xib */,
+				BB8EC4B919E0FD97001AED08 /* Images.xcassets */,
 				BB8EC4AD19E0FD97001AED08 /* Info.plist */,
 				BB8EC4AE19E0FD97001AED08 /* main.m */,
 			);
@@ -201,6 +217,7 @@
 			files = (
 				BB8EC4B819E0FD97001AED08 /* Main.storyboard in Resources */,
 				BB8EC4BD19E0FD97001AED08 /* LaunchScreen.xib in Resources */,
+				BB8EC4DF19E13CF1001AED08 /* snap cheat logo cal hacks.png in Resources */,
 				BB8EC4BA19E0FD97001AED08 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB12901219E145BB00945985 /* ViewController.m in Sources */,
 				BB8EC4C919E0FD97001AED08 /* SnapcheatTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,6 +361,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Snapcheat",
+				);
 				INFOPLIST_FILE = Snapcheat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,6 +375,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Snapcheat",
+				);
 				INFOPLIST_FILE = Snapcheat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -412,6 +438,7 @@
 				BB8EC4CE19E0FD97001AED08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BB8EC4CF19E0FD97001AED08 /* Build configuration list for PBXNativeTarget "SnapcheatTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +447,7 @@
 				BB8EC4D119E0FD97001AED08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
