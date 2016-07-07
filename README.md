@@ -1,2 +1,2 @@
-snapcheat
+Snapdoc
 =========
